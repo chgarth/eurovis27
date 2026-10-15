@@ -1,7 +1,8 @@
 
 .logo-grid {
-    display:                grid;
-    grid-template-columns:  auto auto auto auto auto;
+    display:                flex;
+    flex-wrap:              wrap;
+    justify-content:        center;
     gap:                    32px;
     align-items:            center;
     width:                  100%;
@@ -9,7 +10,12 @@
     box-sizing:             border-box;
 }
 
-.partner-logo {
+.logo-grid > * {
+    flex:                   0 1 320px;
+    margin:                 0;
+}
+
+.logo {
     width:                  100%;
     max-width:              100%;
     height:                 auto;
@@ -22,11 +28,11 @@
 
 @media screen and (max-width: 1080px) {
 
-    .logo-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    .logo-grid > * {
+        flex-basis:            200px;
     }
-  
-    .partner-logo {
+
+    .logo {
         max-height:            45px;
     }
 
