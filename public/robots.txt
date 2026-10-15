@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://eurovis27.github.io/web/sitemap-index.xml

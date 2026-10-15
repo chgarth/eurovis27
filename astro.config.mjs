@@ -12,6 +12,8 @@ import remarkToc from 'remark-toc';
 import rehypeSlug from 'rehype-slug';
 import rehypeExternalLinks from "rehype-external-links";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
     site: 'https://eurovis27.github.io',
@@ -22,7 +24,7 @@ export default defineConfig({
         responsiveStyles: true,
     },
     integrations: [
-        mdx(),
+        mdx(), 
         playformCompress({
             // if you use tailwind or postcss, your CSS is already minified
             CSS: false,
@@ -36,13 +38,14 @@ export default defineConfig({
             // markup in any imported SVGs needs to be minified to remove comments etc.
             // inline SVGs are treated as HTML and minified as such.
             SVG: true,
-        }),
+        }), 
         compressor({
             gzip: false,
             brotli: true,
             fileExtensions: [".css", ".js", ".html", ".xml", ".cjs", ".mjs", ".svg", ".txt", ".mdx", ".md", ".astro"]
-        }),
-        mailObfuscation(),
+        }), 
+        mailObfuscation(), 
+        sitemap()
     ],
     markdown: {
         processor: unified({
