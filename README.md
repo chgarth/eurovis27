@@ -2,7 +2,10 @@
 
 # Eurographics Conference on Visualization 2027 (EuroVis)
 
-This will be the website for the 29th international EuroVis conference, which will take place in 2027 in [Stuttgart, Germany](https://www.openstreetmap.org/relation/5294338). The conference is organized by the [Visualization Research Center (VISUS)](https://www.visus.uni-stuttgart.de/en/) at the University of Stuttgart.
+This is the website for the 29th international EuroVis conference, which will take place in 2027 in [Stuttgart, Germany](https://www.openstreetmap.org/relation/5294338). 
+The conference is organized by the [Visualization Research Center (VISUS)](https://www.visus.uni-stuttgart.de/en/) at the University of Stuttgart.
+
+**Visit the website:** [eurovis27.github.io/web/](eurovis27.github.io/web/)
 
 ## Contribute
 
