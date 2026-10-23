@@ -39,28 +39,35 @@ const colorOrange      = "rgb(239, 152,   0)";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="generator" content={Astro.generator} />
-		<link rel="icon" href= {import.meta.env.BASE_URL + "favicon.ico"} /> 
+        <link rel="icon" href= {import.meta.env.BASE_URL + "favicon.ico"} /> 
+        <link rel="icon" href= {import.meta.env.BASE_URL + "favicon-16x16.png"}  type="image/png"/> 
+        <link rel="icon" href= {import.meta.env.BASE_URL + "favicon-32x32.png"}  type="image/png"/> 
+        <link rel="icon" href= {import.meta.env.BASE_URL + "favicon-96x96.png"}  type="image/png"/> 
 		<title>EuroVis27 - Stuttgart</title>
     <SEO
-      title={title}
-      titleTemplate="%s - EuroVis 2027"
-      description={description}
-      canonical="https://eurovis27.github.io/web/"
-      noindex={false}
-      nofollow={false}
-      openGraph={{
-        basic: {
-          title: title || "EuroVis 2027",
-          type: "website",
-          image: "/seo-screen.png",
-          url: "https://eurovis27.github.io/web/",
-        },
-        optional: {
-          locale: "en_US",
-          siteName: "EuroVis 2027",
-          description: {description},
-        },
-      }}
+        title={title}
+        titleTemplate="%s - EuroVis 2027"
+        titleDefault="EuroVis 2027"
+        description={description}
+        canonical="https://eurovis27.github.io/web/"
+        noindex={false}
+        nofollow={false}
+        noarchive={false}
+        nocache={false}
+        charset="UTF-8"
+        openGraph={{
+            basic: {
+                title: title || "EuroVis 2027",
+                type: "website",
+                image: "https://eurovis27.github.io/web/seo-screen.png",
+                url: "https://eurovis27.github.io/web/",
+            },
+            optional: {
+                locale: "en_US",
+                siteName: "EuroVis 2027",
+                description: {description},
+            },
+        }}
     />
     <Font cssVariable="--font-roboto-regular"/>
     <Font cssVariable="--font-roboto-medium"/>

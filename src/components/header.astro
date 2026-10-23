@@ -1,4 +1,6 @@
 ---
+{/* Inline Layout: The global header */}
+
 import Navigation from './navigation.astro';
 import { Image } from 'astro:assets';
 import imageEuroVisLogo from '../assets/logos/logo_eurovis.svg';
@@ -24,18 +26,18 @@ const { mobileCaption, colorLightBlue, colorMediumBlue, colorAnthracite, colorOr
         margin-bottom:          2rem;
     }
 
-    .logo {
+    .banner-logo {
         position:                absolute;
         left:                    15vw;
         bottom:                  0;        
     }
 
-    .logo-image{
+    .banner-logo-image{
         height:                  8rem;
         width:                   auto;
     }    
 
-    .conference {
+    .banner-conference {
         position:               absolute;
         right:                  15vw;
         bottom:                 0;
@@ -44,11 +46,11 @@ const { mobileCaption, colorLightBlue, colorMediumBlue, colorAnthracite, colorOr
         font-size:              1.5rem;        
     }
 
-    .title {
+    .banner-title {
         font-family:            var(--font-roboto-condensed-bold), system-ui, -apple-system, sans-serif;         
     }
 
-    .locationdate {
+    .banner-locationdate {
         font-family:            var(--font-roboto-condensed-light), system-ui, -apple-system, sans-serif; 
     }
 
@@ -60,11 +62,11 @@ const { mobileCaption, colorLightBlue, colorMediumBlue, colorAnthracite, colorOr
         height:                 7rem;
     }
 
-    .logo-image {
+    .banner-logo-image {
         height:                 7rem;
     }   
 
-    .conference {
+    .banner-conference {
         font-size:              1.3rem;
     }
 }        
@@ -75,22 +77,22 @@ const { mobileCaption, colorLightBlue, colorMediumBlue, colorAnthracite, colorOr
         height:                 6rem;
     }
 
-    .logo-image {
+    .banner-logo-image {
         height:                 6rem;
     }   
 
-    .conference {
+    .banner-conference {
         font-size:              1.1rem;
     }  
 }
 
 @media screen and (max-width: 750px) {
 
-    .logo {
+    .banner-logo {
         left:                    10vw;
     }
 
-    .conference {
+    .banner-conference {
         right:                  10vw;  
     }
 
@@ -98,11 +100,11 @@ const { mobileCaption, colorLightBlue, colorMediumBlue, colorAnthracite, colorOr
         height:                 3rem;
     }
 
-    .logo-image {
+    .banner-logo-image {
         height:                 3rem;
     }   
 
-    .conference {
+    .banner-conference {
         font-size:              0.75rem;
     }  
 
@@ -117,18 +119,18 @@ const { mobileCaption, colorLightBlue, colorMediumBlue, colorAnthracite, colorOr
     <!-- Banner -->
     <a href={import.meta.env.BASE_URL}>
         <div class="banner">
-            <div class="logo">
+            <div class="banner-logo">
                 <Image
                     src={imageEuroVisLogo}
                     alt="EuroVis Logo Stuttgart"
-                    class="logo-image"
+                    class="banner-logo-image"
                 />
             </div>
-            <div class="conference">
-                <span class="title">
+            <div class="banner-conference">
+                <span class="banner-title">
                     The Eurographics Conference on Visualization<br>
                 </span>
-                <span class="locationdate">
+                <span class="banner-locationdate">
                     Stuttgart, Germany<br>
                     May 31 - June 04, 2027
                 </span>
