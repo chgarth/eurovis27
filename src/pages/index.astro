@@ -7,6 +7,35 @@ import * as Partners from "../components/partners.mdx";
 import * as Sponsors from "../components/sponsors.mdx";
 ---
 
+<!-- CSS -------------------------------------------------------- -->
+<style is:global>   
+
+    h3 {
+        font-size:          x-large;
+        font-weight:        bold;  
+        font-family:        var(--font-roboto-medium), system-ui, -apple-system, sans-serif; 
+    }
+
+/***** Additional options for Responsive Web Design *****/
+
+@media screen and (max-width: 1080px) {
+
+    h3 {
+        font-size:          large;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    h3 {
+        font-size:          large;
+    }
+  
+}
+</style>
+
+
 <!-- HTML ------------------------------------------------------- -->
 <Layout 
     frontmatter={{ 
