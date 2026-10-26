@@ -7,7 +7,8 @@
   {
     "category": "Workshops",
     "type": "Notification",
-    "originalDate": "2026-10-26T23:59:59-12:00"
+    "originalDate": "2026-10-26T23:59:59-12:00",
+    "extendedDate": "2026-11-02T23:59:59-12:00"
   },
   {
     "category": "STARs",
