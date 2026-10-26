@@ -38,5 +38,35 @@
     "category": "STARs",
     "type": "Camera-Ready Submission",
     "originalDate": "2027-03-22T23:59:59-12:00"
-  }
+  },
+  {
+    "category": "FullPaper",
+    "type": "Abstract Submission",
+    "originalDate": "2026-11-23T23:59:59-12:00"
+  },
+  {
+    "category": "FullPaper",
+    "type": "Submission",
+    "originalDate": "2026-12-02T23:59:59-12:00"
+  },
+  {
+    "category": "FullPaper",
+    "type": "First Round Notification",
+    "originalDate": "2027-02-10T23:59:59-12:00"
+  },
+  {
+    "category": "FullPaper",
+    "type": "Revision Submission",
+    "originalDate": "2027-03-03T23:59:59-12:00"
+  },
+  {
+    "category": "FullPaper",
+    "type": "Final Notification",
+    "originalDate": "2027-03-17T23:59:59-12:00"
+  },
+  {
+    "category": "FullPaper",
+    "type": "Camera-Ready Submission",
+    "originalDate": "2027-04-14T23:59:59-12:00"
+  }  
 ]
