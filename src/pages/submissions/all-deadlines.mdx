@@ -5,6 +5,7 @@ parent:      "Submissions"
 description: "All deadlines in one page"
 ---
 
+
 import { getCollection } from 'astro:content';
 import DeadlineItem from '../../components/DeadlineItem.astro';
 
@@ -24,6 +25,24 @@ export const groupedDeadlines = sortedDeadlines.reduce((groups, item) => {
   groups[category].push(item);
   return groups;
 }, {});
+
+
+<style>
+    {`
+        td {
+            min-width:    15rem;
+        }
+
+        @media screen and (max-width: 720px) {
+
+            td {
+                min-width:    0rem;
+            }
+        }
+
+    `}
+</style>
+
 
 # Important Dates
 
